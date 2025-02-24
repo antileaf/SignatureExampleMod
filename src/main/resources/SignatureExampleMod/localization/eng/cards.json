@@ -1,0 +1,62 @@
+{
+  "SignatureExampleMod:SPDoll": {
+    "NAME": "SP Doll",
+    "DESCRIPTION": "Randomly *Place a *Shanghai *Doll or *Kyoto *Doll in at most !M! random empty slots, respectively."
+  },
+
+  "SignatureExampleMod:DollCremation": {
+    "NAME": "Doll Cremation",
+    "DESCRIPTION": "Ethereal. NL *Recycle the rightmost *Doll, deal !D! damage."
+  },
+
+  "SignatureExampleMod:DollActivation": {
+    "NAME": "Doll Activation",
+    "DESCRIPTION": "At the end of your turn, your rightmost *Doll *Acts once.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, your rightmost !M! *Dolls each *Act once."
+  },
+
+  "SignatureExampleMod:DollMiraCeti": {
+    "NAME": "Doll Mira Ceti",
+    "DESCRIPTION": "*Command: Target *Doll *Acts !M! times.",
+    "UPGRADE_DESCRIPTION": "*Command: Target *Doll *Acts !M! (X+1) times."
+  },
+
+  "SignatureExampleMod:IllusoryMoon": {
+    "NAME": "Illusory Moon",
+    "DESCRIPTION": "Deal 9 damage, then deal !D! damage to ALL enemies !M! times."
+  },
+
+  "SignatureExampleMod:SurpriseSpring": {
+    "NAME": "Surprise Spring",
+    "DESCRIPTION": "Gain [E]. NL Heal !M! HP. NL Draw a card, and Upgrade it this combat. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Heal !M! HP. NL Draw a card, and Upgrade it this combat. NL Exhaust."
+  },
+
+  "SignatureExampleMod:CollapsingWorlds": {
+    "NAME": "Collapsing Worlds!",
+    "DESCRIPTION": "Deal !D! damage. NL If this kills the target, gain an extra turn after this one, and then Exhaust."
+  },
+
+  "SignatureExampleMod:PrincessForm": {
+    "NAME": "Princess Form",
+    "DESCRIPTION": "Ethereal. NL Whenever you play a 1-cost card, add its copy with *Phantom to your hand. NL *Phantom cards do not trigger this effect.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a 1-cost card, add its copy with *Phantom to your hand. NL *Phantom cards do not trigger this effect."
+  },
+
+  "SignatureExampleMod:PaintballLob": {
+    "NAME": "Paintball Lob",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL *Load this card."
+  },
+
+  "SignatureExampleMod:Retro": {
+    "NAME": "Retro",
+    "DESCRIPTION": "Increase the damage and Block of cards with a rarity of Common, Uncommon, or Special by !M!.",
+    "SIGNATURE_UNLOCK_CONDITION": "View the upgraded version of this card. NL (Resets each time you launch the game.)"
+  },
+
+  "SignatureExampleMod:EverydayMomentsWithYou": {
+    "NAME": "Moments",
+    "DESCRIPTION": "*Load a *Miracle+. NL If played from *Magazine, *Load this card; otherwise, Exhaust.",
+    "SIGNATURE_UNLOCK_CONDITION": "Everyday moments with you, unfolds into miracles. NL (Hint: Toggle Debug mode of STS Signature Lib in the Mods settings panel)"
+  }
+}

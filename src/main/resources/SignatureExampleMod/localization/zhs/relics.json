@@ -1,0 +1,9 @@
+{
+  "SignatureExampleMod:SmileBadge": {
+    "NAME": "微笑徽章",
+    "FLAVOR": "真纪时常别在外套上的徽章。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，随机 #y标记 一名敌人，并获得 [E] 。"
+    ]
+  }
+}

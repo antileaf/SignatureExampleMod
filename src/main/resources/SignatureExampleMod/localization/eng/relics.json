@@ -1,0 +1,9 @@
+{
+  "SignatureExampleMod:SmileBadge": {
+    "NAME": "Smile Badge",
+    "FLAVOR": "A badge often seen on Maki's jacket.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, #yMark a random enemy, and gain [E] ."
+    ]
+  }
+}

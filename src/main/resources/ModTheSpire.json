@@ -1,0 +1,13 @@
+{
+  "modid": "SignatureExampleMod",
+  "name": "Signature Example Mod",
+  "author_list": [
+    "antileaf"
+  ],
+  "description": "An example mod for STS Signature Lib.",
+  "dependencies": [
+    "basemod", "SignatureLib"
+  ],
+  "version": "0.0.1",
+  "sts_version": "9-21-2023"
+}

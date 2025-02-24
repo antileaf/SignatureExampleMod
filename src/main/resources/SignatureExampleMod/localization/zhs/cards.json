@@ -1,0 +1,62 @@
+{
+  "SignatureExampleMod:SPDoll": {
+    "NAME": "人偶SP",
+    "DESCRIPTION": "在至多 !M! 个随机空栏位中各随机 *生成 一个 *上海人偶 或 *京都人偶 。"
+  },
+
+  "SignatureExampleMod:DollCremation": {
+    "NAME": "人偶火葬",
+    "DESCRIPTION": "虚无 。 NL *回收 最右侧的 *人偶 ，造成 !D! 点伤害。"
+  },
+
+  "SignatureExampleMod:DollActivation": {
+    "NAME": "人偶振起",
+    "DESCRIPTION": "在你的回合结束时，使你最右侧的 *人偶 *行动 一次。",
+    "UPGRADE_DESCRIPTION": "在你的回合结束时，使你最右侧的 !M! 个 *人偶 *行动 一次。"
+  },
+
+  "SignatureExampleMod:DollMiraCeti": {
+    "NAME": "人偶鲸鱼座",
+    "DESCRIPTION": "*指令 ：目标 *人偶 *行动 !M! X 次。",
+    "UPGRADE_DESCRIPTION": "*指令 ：目标 *人偶 *行动 !M! (X+1) 次。"
+  },
+
+  "SignatureExampleMod:IllusoryMoon": {
+    "NAME": "玄度空盘",
+    "DESCRIPTION": "造成 9 点伤害，然后再对所有敌人造成 !D! 点伤害 !M! 次。"
+  },
+
+  "SignatureExampleMod:SurpriseSpring": {
+    "NAME": "惊喜之春",
+    "DESCRIPTION": "获得 [E] 。 NL 恢复 !M! 点生命。 NL 抽一张牌，将其在本场战斗中 升级 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 恢复 !M! 点生命。 NL 抽一张牌，将其在本场战斗中 升级 。 NL 消耗 。"
+  },
+
+  "SignatureExampleMod:CollapsingWorlds": {
+    "NAME": "平衡崩坏！",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果这张牌杀死了目标敌人，在本回合结束后获得一个额外回合，然后 消耗 。"
+  },
+
+  "SignatureExampleMod:PrincessForm": {
+    "NAME": "魔王形态",
+    "DESCRIPTION": "虚无 。 NL 在你打出一张耗能为1的牌后，将一张具有 *幻影 的复制加入手牌。 NL *幻影 不会触发此效果。",
+    "UPGRADE_DESCRIPTION": "在你打出一张耗能为1的牌后，将一张具有 *幻影 的复制加入手牌。 NL *幻影 不会触发此效果。"
+  },
+
+  "SignatureExampleMod:PaintballLob": {
+    "NAME": "投掷油漆弹",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。 NL *装载 这张牌。"
+  },
+
+  "SignatureExampleMod:Retro": {
+    "NAME": "复古",
+    "DESCRIPTION": "你的稀有度为初始、普通或特殊的牌的伤害和 格挡 增加 !M! 点。",
+    "SIGNATURE_UNLOCK_CONDITION": "查看这张牌的升级版。 NL （每次启动游戏时会重置。）"
+  },
+
+  "SignatureExampleMod:EverydayMomentsWithYou": {
+    "NAME": "与你的日常",
+    "DESCRIPTION": "*装载 一张 *奇迹+ 。 NL 如果从 *弹仓 中打出， *装载 这张牌；否则 消耗 。",
+    "SIGNATURE_UNLOCK_CONDITION": "与你的日常， NL 就是奇迹。 NL （提示：在 Mods 设置面板中打开 STS Signature Lib 的调试模式）"
+  }
+}
