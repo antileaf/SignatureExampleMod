@@ -1,5 +1,7 @@
 package me.antileaf.example.cards.maki;
 
+import com.evacipated.cardcrawl.modthespire.lib.SpireField;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,6 +12,9 @@ import me.antileaf.example.patches.enums.CardColorEnum;
 import me.antileaf.example.utils.ExampleHelper;
 import me.antileaf.signature.card.AbstractSignatureCard;
 
+import java.lang.ref.WeakReference;
+import java.util.WeakHashMap;
+
 public class EverydayMomentsWithYou extends AbstractSignatureCard {
 	public static final String SIMPLE_NAME = EverydayMomentsWithYou.class.getSimpleName();
 	public static final String ID = ExampleHelper.makeID(SIMPLE_NAME);
@@ -17,6 +22,8 @@ public class EverydayMomentsWithYou extends AbstractSignatureCard {
 
 	private static final int COST = 1;
 	private static final int UPGRADED_COST = 0;
+
+	public static final WeakHashMap<AbstractCard, Boolean> signature = new WeakHashMap<>();
 
 	public EverydayMomentsWithYou() {
 		super(
@@ -28,10 +35,11 @@ public class EverydayMomentsWithYou extends AbstractSignatureCard {
 				CardType.SKILL,
 				CardColorEnum.MAKI_COLOR,
 				CardRarity.RARE,
-				CardTarget.SELF
+				CardTarget.NONE
 		);
 
 		this.cardsToPreview = new Miracle();
+		signature.put(this.cardsToPreview, true);
 		this.cardsToPreview.upgrade();
 	}
 

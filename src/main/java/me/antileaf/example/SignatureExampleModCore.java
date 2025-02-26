@@ -19,6 +19,7 @@ import me.antileaf.example.patches.enums.CardColorEnum;
 import me.antileaf.example.patches.enums.PlayerEnum;
 import me.antileaf.example.utils.ExampleAudioMaster;
 import me.antileaf.example.utils.ExampleHelper;
+import me.antileaf.signature.interfaces.SignatureSubscriber;
 import me.antileaf.signature.utils.SignatureHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,7 +32,8 @@ public class SignatureExampleModCore implements
 		EditRelicsSubscriber,
 		EditStringsSubscriber,
 		AddAudioSubscriber,
-		PostInitializeSubscriber {
+		PostInitializeSubscriber,
+		SignatureSubscriber {
 	public static final String MOD_ID = "SignatureExampleMod";
 
 	private static final Logger logger = LogManager.getLogger(SignatureExampleModCore.class.getName());
@@ -50,6 +52,7 @@ public class SignatureExampleModCore implements
 
 	public SignatureExampleModCore() {
 		BaseMod.subscribe(this);
+		SignatureHelper.subscribe(this);
 
 		BaseMod.addColor(
 				CardColorEnum.MAKI_COLOR,
@@ -158,7 +161,10 @@ public class SignatureExampleModCore implements
 	public void receivePostInitialize() {
 		SignatureHelper.register(Miracle.ID, new SignatureHelper.Info(
 				ExampleHelper.getImgFilePath("signature", "Miracle_s"),
-				ExampleHelper.getImgFilePath("signature", "Miracle_s_p")
+				ExampleHelper.getImgFilePath("signature", "Miracle_s_p"),
+				card -> EverydayMomentsWithYou.signature.containsKey(card) &&
+						EverydayMomentsWithYou.signature.get(card),
+				EverydayMomentsWithYou.ID
 		));
 
 		SignatureHelper.addUnlockConditions("SignatureExampleMod/localization/" +
@@ -177,5 +183,11 @@ public class SignatureExampleModCore implements
 		logger.info("SignatureHelper.noDebuggingPrefix(\"SignatureExampleMod:\")");
 		logger.info("Or:");
 		logger.info("SignatureHelper.noDebugging(Miracle.ID)");
+	}
+
+	@Override
+	public void receiveOnSignatureUnlocked(String cardID, boolean unlock) {
+		if (cardID.equals(Retro.ID))
+			SignatureHelper.enable(Retro.ID, true);
 	}
 }
