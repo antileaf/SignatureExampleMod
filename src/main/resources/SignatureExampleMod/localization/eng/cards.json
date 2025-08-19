@@ -45,7 +45,8 @@
 
   "SignatureExampleMod:PaintballLob": {
     "NAME": "Paintball Lob",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL *Load this card."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL *Load this card.",
+    "SIGNATURE_ILLUSTRATOR": "Illustrator: PELLas"
   },
 
   "SignatureExampleMod:Retro": {
@@ -57,6 +58,7 @@
   "SignatureExampleMod:EverydayMomentsWithYou": {
     "NAME": "Moments",
     "DESCRIPTION": "*Load a *Miracle+. NL If played from *Magazine, *Load this card; otherwise, Exhaust.",
-    "SIGNATURE_UNLOCK_CONDITION": "Everyday moments with you, unfolds into miracles. NL (Hint: Toggle Debug mode of STS Signature Lib in the Mods settings panel)"
+    "SIGNATURE_UNLOCK_CONDITION": "Everyday moments with you, unfolds into miracles. NL (Hint: Toggle Debug mode of STS Signature Lib in the Mods settings panel)",
+    "SIGNATURE_ILLUSTRATOR": "PID: 118134642"
   }
 }

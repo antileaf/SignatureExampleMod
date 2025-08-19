@@ -7,6 +7,7 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.colorless.JackOfAllTrades;
 import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.*;
@@ -23,7 +24,6 @@ import me.antileaf.signature.interfaces.SignatureSubscriber;
 import me.antileaf.signature.utils.SignatureHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.Sys;
 
 @SpireInitializer
 public class SignatureExampleModCore implements
@@ -166,6 +166,25 @@ public class SignatureExampleModCore implements
 						EverydayMomentsWithYou.signature.get(card),
 				EverydayMomentsWithYou.ID
 		));
+
+		SignatureHelper.register(Miracle.ID,
+				new SignatureHelper.InfoBuilder()
+						.img(ExampleHelper.getImgFilePath("signature", "Miracle_s"))
+						.energyOrb(get512Path("orb"))
+//						.hideFrame(true)
+//						.hideTitle(true)
+						.parentID(EverydayMomentsWithYou.ID)
+						.build()
+		);
+
+		SignatureHelper.register(JackOfAllTrades.ID,
+				new SignatureHelper.InfoBuilder()
+						.img(ExampleHelper.getImgFilePath("signature", "JackOfAllTrades_s"))
+						.energyOrb(get512Path("orb"))
+						.hideFrame(true)
+						.hideTitle(true)
+						.build()
+		);
 
 		SignatureHelper.addUnlockConditions("SignatureExampleMod/localization/" +
 				ExampleHelper.getLangShort() + "/unlock.json");

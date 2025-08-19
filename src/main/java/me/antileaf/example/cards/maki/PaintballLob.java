@@ -38,6 +38,16 @@ public class PaintballLob extends AbstractSignatureCard {
 	}
 
 	@Override
+	public boolean hideTitle() {
+		return true;
+	}
+
+	@Override
+	public boolean hideFrame() {
+		return true;
+	}
+
+	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 
 	}

@@ -36,6 +36,11 @@ public class Retro extends AbstractSignatureCard {
 	}
 
 	@Override
+	public String getSignatureEnergyOrbPath() {
+		return ExampleHelper.getImgFilePath("512", "orb_s");
+	}
+
+	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 
 	}
